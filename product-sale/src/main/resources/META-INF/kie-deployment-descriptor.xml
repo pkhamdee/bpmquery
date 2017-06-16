@@ -5,7 +5,13 @@
     <audit-mode>JPA</audit-mode>
     <persistence-mode>JPA</persistence-mode>
     <runtime-strategy>SINGLETON</runtime-strategy>
-    <marshalling-strategies/>
+    <marshalling-strategies>
+        <marshalling-strategy>
+            <resolver>mvel</resolver>
+            <identifier>new org.drools.persistence.jpa.marshaller.JPAPlaceholderResolverStrategy("org.jbpm.test:product-sale:1.0", classLoader)</identifier>
+            <parameters/>
+        </marshalling-strategy>
+    </marshalling-strategies>
     <event-listeners/>
     <task-event-listeners/>
     <globals/>
@@ -16,28 +22,12 @@
             <parameters/>
             <name>Log</name>
         </work-item-handler>
-        <work-item-handler>
-            <resolver>mvel</resolver>
-            <identifier>new org.jbpm.process.workitem.bpmn2.ServiceTaskHandler(ksession, classLoader)</identifier>
-            <parameters/>
-            <name>Service Task</name>
-        </work-item-handler>
-        <work-item-handler>
-            <resolver>mvel</resolver>
-            <identifier>new org.jbpm.process.workitem.webservice.WebServiceWorkItemHandler(ksession, classLoader)</identifier>
-            <parameters/>
-            <name>WebService</name>
-        </work-item-handler>
-        <work-item-handler>
-            <resolver>mvel</resolver>
-            <identifier>new org.jbpm.process.workitem.rest.RESTWorkItemHandler(classLoader)</identifier>
-            <parameters/>
-            <name>Rest</name>
-        </work-item-handler>
     </work-item-handlers>
     <environment-entries/>
     <configurations/>
     <required-roles/>
-    <remoteable-classes/>
+    <remoteable-classes>
+        <remoteable-class>org.jbpm.test.ProductSale</remoteable-class>
+    </remoteable-classes>
     <limit-serialization-classes>true</limit-serialization-classes>
 </deployment-descriptor>

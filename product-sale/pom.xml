@@ -7,11 +7,18 @@
   <version>1.0</version>
   <packaging>kjar</packaging>
   <name>product-sale</name>
+  <dependencies>
+  <dependency>
+    <groupId>org.jbpm.test</groupId>
+  <artifactId>query-addons</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  </dependency>
+  </dependencies>
   <repositories>
     <repository>
       <id>guvnor-m2-repo</id>
       <name>Guvnor M2 Repo</name>
-      <url>http://localhost:8080/business-central/maven2/</url>
+      <url>http://localhost:8080/kie-wb/maven2/</url>
     </repository>
   </repositories>
   <build>
@@ -19,7 +26,7 @@
       <plugin>
         <groupId>org.kie</groupId>
         <artifactId>kie-maven-plugin</artifactId>
-        <version>6.5.0.Final-redhat-9</version>
+        <version>6.4.0-SNAPSHOT</version>
         <extensions>true</extensions>
       </plugin>
     </plugins>
