@@ -1,0 +1,55 @@
+
+<form id="661756741">
+<property name="name" value="Saleproduct-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="3" name="product_productCode" type="InputText" id="1336648281">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;productCode (product)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="_product/productCode"/>
+<property name="outputBinding" value="product_/productCode"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="1" name="product_id" type="InputTextLong" id="2108584008">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;id (product)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="_product/id"/>
+<property name="outputBinding" value="product_/id"/>
+<property name="fieldClass" value="java.lang.Long"/>
+</field>
+<field position="0" name="product_country" type="InputText" id="1600604639">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;country (product)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="_product/country"/>
+<property name="outputBinding" value="product_/country"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="5" name="product_saleDate" type="InputDate" id="1609956861">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;saleDate (product)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="_product/saleDate"/>
+<property name="outputBinding" value="product_/saleDate"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="4" name="product_quantity" type="InputTextInteger" id="1486391602">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;quantity (product)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="_product/quantity"/>
+<property name="outputBinding" value="product_/quantity"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="2" name="product_price" type="InputTextDouble" id="593736940">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;price (product)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="_product/price"/>
+<property name="outputBinding" value="product_/price"/>
+<property name="fieldClass" value="java.lang.Double"/>
+</field>
+<dataHolder inputId="_product" name="#BBBBBB" type="dataModelerEntry" outId="product_" value="org.jbpm.test.ProductSale" id="product"/>
+</form>
